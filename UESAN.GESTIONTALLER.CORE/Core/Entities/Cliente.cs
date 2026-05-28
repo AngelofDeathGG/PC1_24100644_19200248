@@ -33,4 +33,8 @@ public partial class Cliente
 
     [InverseProperty("Cliente")]
     public virtual ICollection<Vehiculo> Vehiculo { get; set; } = new List<Vehiculo>();
+
+    //Prueba Comit
+
+
 }
