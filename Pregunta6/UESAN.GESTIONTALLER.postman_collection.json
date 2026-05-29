@@ -1,0 +1,211 @@
+{
+  "info": {
+    "_postman_id": "8347769f-b616-4c9f-a442-4f0fa4cd0c96",
+    "name": "UESAN.GESTIONTALLER",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48473313",
+    "_collection_link": "https://go.postman.co/collection/48473313-8347769f-b616-4c9f-a442-4f0fa4cd0c96?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET TipoServicios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7145/api/TipoServicios",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "TipoServicios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST TipoServicio",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Lavado Completo\",\r\n  \"precioBase\": 35.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7145/api/TipoServicios",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "TipoServicios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT TipoServicio",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 1,\r\n  \"nombre\": \"Cambio de Aceite Premium\",\r\n  \"precioBase\": 95.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7145/api/TipoServicios/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "TipoServicios",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE TipoServicio",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7145/api/TipoServicios/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "TipoServicios",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET OrdenServicios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7145/api/OrdenServicios",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "OrdenServicios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fechaIngreso\": \"2026-05-28T18:00:00\",\r\n  \"descripcionProblema\": \"El vehículo no enciende por la mañana\",\r\n  \"costoEstimado\": 250.00,\r\n  \"estado\": \"Pendiente\",\r\n  \"vehiculoId\": 1,\r\n  \"tipoServicioId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7145/api/OrdenServicios",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "OrdenServicios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT OrdenServicio",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 1,\r\n  \"fechaIngreso\": \"2026-05-28T18:00:00\",\r\n  \"descripcionProblema\": \"El vehículo no enciende, posible falla de batería\",\r\n  \"costoEstimado\": 300.00,\r\n  \"estado\": \"En Progreso\",\r\n  \"vehiculoId\": 1,\r\n  \"tipoServicioId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7145/api/OrdenServicios/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "OrdenServicios",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE OrdenServicio",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7145/api/OrdenServicios/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7145",
+          "path": [
+            "api",
+            "OrdenServicios",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
